@@ -1,6 +1,7 @@
 package ru.job4j.job4j_passport_service.controller;
 
 import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,14 +13,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/passport")
+@AllArgsConstructor
 public class PassportController {
 
     @Autowired
     PassportService passportService;
-
-    public PassportController(PassportService passportService) {
-        this.passportService = passportService;
-    }
 
     @PostMapping("/")
     public ResponseEntity<Passport> save(@RequestBody Passport passport) {

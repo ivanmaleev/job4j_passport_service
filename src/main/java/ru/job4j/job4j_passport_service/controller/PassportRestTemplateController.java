@@ -1,6 +1,7 @@
 package ru.job4j.job4j_passport_service.controller;
 
 import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -17,12 +18,12 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/passport-remote")
+@AllArgsConstructor
 public class PassportRestTemplateController {
 
     private static final String API = "http://localhost:8080/passport/";
     private static final String API_ID = "http://localhost:8080/passport/{id}";
 
-    @Autowired
     private RestTemplate rest;
 
     @PostMapping("/")
