@@ -2,7 +2,6 @@ package ru.job4j.job4j_passport_service.controller;
 
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +15,6 @@ import java.util.List;
 @AllArgsConstructor
 public class PassportController {
 
-    @Autowired
     PassportService passportService;
 
     @PostMapping("/")

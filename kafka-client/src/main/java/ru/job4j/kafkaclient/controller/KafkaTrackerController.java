@@ -1,6 +1,5 @@
 package ru.job4j.kafkaclient.controller;
 
-import lombok.AllArgsConstructor;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
@@ -8,7 +7,6 @@ import ru.job4j.kafkaclient.model.Email;
 
 
 @Component
-@AllArgsConstructor
 public class KafkaTrackerController {
 
     @KafkaListener(topics = {"email"})

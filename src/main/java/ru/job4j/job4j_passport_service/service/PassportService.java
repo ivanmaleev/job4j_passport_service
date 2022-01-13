@@ -1,7 +1,6 @@
 package ru.job4j.job4j_passport_service.service;
 
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.job4j.job4j_passport_service.entity.Passport;
 import ru.job4j.job4j_passport_service.repository.PassportRepository;
@@ -14,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 @AllArgsConstructor
 public class PassportService {
 
-    @Autowired
     PassportRepository passportRepository;
 
     public Passport save(Passport passport) {

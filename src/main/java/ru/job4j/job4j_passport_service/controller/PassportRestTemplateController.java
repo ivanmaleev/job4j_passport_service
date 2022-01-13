@@ -2,7 +2,6 @@ package ru.job4j.job4j_passport_service.controller;
 
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
